@@ -15,8 +15,8 @@ describe('#load', () => {
       <input type="password" data-password-visibility-target="input" />
 
       <button type="button" data-action="password-visibility#toggle">
-        <span data-password-visibility-target="hiddenIcon">Eye</span>
-        <span data-password-visibility-target="visibleIcon" class="hidden">Eye Slash</span>
+        <span data-password-visibility-target="icon">Eye</span>
+        <span data-password-visibility-target="icon" class="hidden">Eye Slash</span>
       </button>
     </div>
     `
@@ -25,8 +25,8 @@ describe('#load', () => {
   it('toggles the password visibility', async () => {
     const input: HTMLInputElement = document.querySelector('input')
     const button: HTMLButtonElement = document.querySelector('button')
-    const hiddenIcon: HTMLElement = document.querySelector('[data-password-visibility-target="hiddenIcon"]')
-    const visibleIcon: HTMLElement = document.querySelector('[data-password-visibility-target="visibleIcon"]')
+    const hiddenIcon: HTMLElement = document.querySelector('[data-password-visibility-target="icon"]')
+    const visibleIcon: HTMLElement = document.querySelector('.hidden[data-password-visibility-target="icon"]')
 
     expect(input.type).toBe('password')
 

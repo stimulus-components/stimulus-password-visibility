@@ -6,10 +6,9 @@ export default class extends Controller {
   class: string
   hidden: boolean
   inputTarget: HTMLInputElement
-  hiddenIconTarget: HTMLElement
-  visibleIconTarget: HTMLElement
+  iconTargets: HTMLElement[]
 
-  static targets = ['input', 'hiddenIcon', 'visibleIcon']
+  static targets = ['input', 'icon']
   static classes = ['hidden']
 
   connect (): void {
@@ -23,7 +22,6 @@ export default class extends Controller {
     this.inputTarget.type = this.hidden ? 'text' : 'password'
     this.hidden = !this.hidden
 
-    this.hiddenIconTarget.classList.toggle(this.class)
-    this.visibleIconTarget.classList.toggle(this.class)
+    this.iconTargets.forEach(icon => icon.classList.toggle(this.class))
   }
 }
