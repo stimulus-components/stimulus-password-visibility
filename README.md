@@ -5,7 +5,7 @@
 [![](https://github.com/stimulus-components/stimulus-password-visibility/workflows/Lint/badge.svg)](https://github.com/stimulus-components/stimulus-password-visibility)
 [![](https://github.com/stimulus-components/stimulus-password-visibility/workflows/Test/badge.svg)](https://github.com/stimulus-components/stimulus-password-visibility)
 [![](https://img.shields.io/github/license/stimulus-components/stimulus-password-visibility.svg)](https://github.com/stimulus-components/stimulus-password-visibility)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d62d950e-aae7-464d-8333-1078a16ec481/deploy-status)](https://stimulus-password-visibility.netlify.com)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cb3eca87-30b7-4645-8ca1-399eec80c8d1/deploy-status)](https://stimulus-password-visibility.netlify.com)
 
 ## Getting started
 
