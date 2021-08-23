@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.1] - 2021-08-23
+
+### Changed
+
+- Removing useless `date-fns` dependency.
+
 ## [1.0.1] - 2021-08-14
 
 ### Changed
