@@ -1,13 +1,17 @@
-import path from 'path'
+import { resolve } from 'path'
+import { defineConfig } from 'vite'
 
-export default ({ mode }) => {
-  if (mode === 'netlify') return {}
+export default defineConfig(({ mode }) => {
+  if (mode === 'netlify') {
+    return {}
+  }
 
   return {
     build: {
       lib: {
-        entry: path.resolve(__dirname, 'src/index.ts'),
-        name: 'stimulus-password-visibility'
+        entry: resolve(__dirname, 'src/index.ts'),
+        name: 'StimulusPasswordVisibility',
+        fileName: 'stimulus-password-visibility'
       },
       rollupOptions: {
         external: ['@hotwired/stimulus'],
@@ -19,4 +23,4 @@ export default ({ mode }) => {
       }
     }
   }
-}
+})
