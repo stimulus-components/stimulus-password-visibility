@@ -5,7 +5,6 @@
 [![](https://github.com/stimulus-components/stimulus-password-visibility/workflows/Lint/badge.svg)](https://github.com/stimulus-components/stimulus-password-visibility)
 [![](https://github.com/stimulus-components/stimulus-password-visibility/workflows/Test/badge.svg)](https://github.com/stimulus-components/stimulus-password-visibility)
 [![](https://img.shields.io/github/license/stimulus-components/stimulus-password-visibility.svg)](https://github.com/stimulus-components/stimulus-password-visibility)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cb3eca87-30b7-4645-8ca1-399eec80c8d1/deploy-status)](https://stimulus-password-visibility.netlify.com)
 
 ## Getting started
 
@@ -13,7 +12,7 @@ A Stimulus controller to change a password input visibility.
 
 ## 📚 Documentation
 
-See [stimulus-password-visibility documentation](https://stimulus-components.netlify.app/docs/components/stimulus-password-visibility/).
+See [stimulus-password-visibility documentation](https://www.stimulus-components.com/docs/stimulus-password-visibility/).
 
 ## 👷‍♂️ Contributing
 
