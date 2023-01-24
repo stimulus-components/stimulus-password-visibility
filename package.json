@@ -18,7 +18,7 @@
   "homepage": "https://github.com/stimulus-components/stimulus-password-visibility",
   "private": false,
   "main": "dist/stimulus-password-visibility.umd.js",
-  "module": "dist/stimulus-password-visibility.es.js",
+  "module": "dist/stimulus-password-visibility.mjs",
   "scripts": {
     "format": "prettier-standard  '**/*.{ts,css,html}' --format",
     "lint": "prettier-standard  '**/*.{ts,css,html}' --lint",
