@@ -1,12 +1,16 @@
-import { Application } from '@hotwired/stimulus'
-import PasswordVisibility from '../src/index'
+/**
+ * @jest-environment jsdom
+ */
+
+import { Application } from "@hotwired/stimulus"
+import PasswordVisibility from "../src/index"
 
 const startStimulus = () => {
   const application = Application.start()
-  application.register('password-visibility', PasswordVisibility)
+  application.register("password-visibility", PasswordVisibility)
 }
 
-describe('#load', () => {
+describe("#load", () => {
   beforeEach(() => {
     startStimulus()
 
@@ -22,21 +26,21 @@ describe('#load', () => {
     `
   })
 
-  it('toggles the password visibility', async () => {
-    const input: HTMLInputElement = document.querySelector('input')
-    const button: HTMLButtonElement = document.querySelector('button')
+  it("toggles the password visibility", async () => {
+    const input: HTMLInputElement = document.querySelector("input")
+    const button: HTMLButtonElement = document.querySelector("button")
     const hiddenIcon: HTMLElement = document.querySelector('[data-password-visibility-target="icon"]')
     const visibleIcon: HTMLElement = document.querySelector('.hidden[data-password-visibility-target="icon"]')
 
-    expect(input.type).toBe('password')
+    expect(input.type).toBe("password")
 
-    expect(hiddenIcon.classList.contains('hidden')).toBe(false)
-    expect(visibleIcon.classList.contains('hidden')).toBe(true)
+    expect(hiddenIcon.classList.contains("hidden")).toBe(false)
+    expect(visibleIcon.classList.contains("hidden")).toBe(true)
 
     button.click()
 
-    expect(input.type).toBe('text')
-    expect(hiddenIcon.classList.contains('hidden')).toBe(true)
-    expect(visibleIcon.classList.contains('hidden')).toBe(false)
+    expect(input.type).toBe("text")
+    expect(hiddenIcon.classList.contains("hidden")).toBe(true)
+    expect(visibleIcon.classList.contains("hidden")).toBe(false)
   })
 })
